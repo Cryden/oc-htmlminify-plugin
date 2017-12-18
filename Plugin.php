@@ -2,6 +2,9 @@
 
 namespace Crydesign\Htmlminify;
 
+use nochso\HtmlCompressTwig\Extension;
+use Event;
+
 class Plugin extends \System\Classes\PluginBase
 {
     public function pluginDetails()
@@ -15,7 +18,11 @@ class Plugin extends \System\Classes\PluginBase
         ];
     }
 
-    public function registerComponents()
+    public function boot()
     {
+        Event::listen('cms.page.beforeRenderPage', function($controller, $page) {
+            $twig = $controller->getTwig();
+            $twig->addExtension(new Extension(true));
+        });
     }
 }
