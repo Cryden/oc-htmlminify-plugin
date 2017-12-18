@@ -12,7 +12,7 @@ class Plugin extends \System\Classes\PluginBase
         return [
             'name' => 'HTML minify Plugin',
             'description' => 'Any HTML, inline CSS and Javascript will be compressed.',
-            'author' => 'DmitryBykov',
+            'author' => 'Dmitry Bykov',
             'icon' => 'icon-compress',
             'iconSVG' => 'plugins/DmitryBykov/htmlminify/assets/images/logo.png'
         ];
