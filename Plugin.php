@@ -1,6 +1,6 @@
 <?php
 
-namespace Crydesign\Htmlminify;
+namespace DmitryBykov\Htmlminify;
 
 use nochso\HtmlCompressTwig\Extension;
 use Event;
@@ -12,9 +12,9 @@ class Plugin extends \System\Classes\PluginBase
         return [
             'name' => 'HTML minify Plugin',
             'description' => 'Any HTML, inline CSS and Javascript will be compressed.',
-            'author' => 'Crydesign',
+            'author' => 'DmitryBykov',
             'icon' => 'icon-compress',
-            'iconSVG' => 'plugins/crydesign/htmlminify/assets/images/logo.png'
+            'iconSVG' => 'plugins/DmitryBykov/htmlminify/assets/images/logo.png'
         ];
     }
 
