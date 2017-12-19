@@ -14,7 +14,8 @@ class Plugin extends \System\Classes\PluginBase
             'description' => 'Any HTML, inline CSS and Javascript will be compressed.',
             'author' => 'Dmitry Bykov',
             'icon' => 'icon-compress',
-            'iconSVG' => 'plugins/DmitryBykov/htmlminify/assets/images/logo.png'
+            'iconSVG' => 'plugins/DmitryBykov/htmlminify/assets/images/logo.png',
+            'homepage' => 'https://github.com/Cryden/oc-htmlminify-plugin'
         ];
     }
 
