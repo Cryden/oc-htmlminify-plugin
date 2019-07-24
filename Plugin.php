@@ -23,7 +23,7 @@ class Plugin extends \System\Classes\PluginBase
     {
         Event::listen('cms.page.beforeRenderPage', function($controller, $page) {
             $twig = $controller->getTwig();
-            $twig->addExtension(new Extension(true));
+            !$twig->hasExtension('nochso\HtmlCompressTwig\Extension') && $twig->addExtension(new Extension(true));
         });
     }
 }
