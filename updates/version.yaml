@@ -1,1 +1,2 @@
 1.0.1: HTML minify plugin
+1.0.2: Fixed Error When Using OctoberCMS as a SPA (e.g. easySPA plugin)
