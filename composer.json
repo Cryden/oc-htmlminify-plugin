@@ -1,5 +1,9 @@
 {
+    "name": "dmitrybykov/htmlminify-plugin",
+    "type": "october-plugin",
+    "description": "No description provided yet...",
     "require": {
+        "composer/installers": "~1.0",
         "nochso/html-compress-twig": "^2.0"
     }
 }
